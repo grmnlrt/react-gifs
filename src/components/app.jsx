@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import SearchBar from './searchbar.jsx';
-import GifsList from './gifslist.jsx';
-import SelectedGif from './selected_gif.jsx';
+import SearchBar from './searchbar';
+import GifsList from './gifslist';
+import SelectedGif from './selected_gif';
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      gifsList: ["toto", "tata"]
+    }
+  }
 
   render() {
     return (
@@ -16,7 +20,7 @@ class App extends Component {
           <SelectedGif/>
         </div>
         <div className="right-content">
-          <GifsList/>
+          <GifsList gifs={this.state.gifsList}/>
         </div>
       </div>
     );

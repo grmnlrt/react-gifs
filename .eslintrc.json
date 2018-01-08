@@ -1,15 +1,15 @@
 {
-    "extends": "airbnb",
-    "rules": {
+  "extends": "airbnb",
+  "rules": {
     "no-console": "off",
     "comma-dangle": "off",
     "quotes": "off",
     "react/prop-types": 0, // if you use react
     "arrow-body-style": 0,
     "space-before-function-paren": 0
-    },
-    "env": {
-      "browser": true
-    },
-    "parser": "babel-eslint"
+  },
+  "env": {
+    "browser": true
+  },
+  "parser": "babel-eslint"
 }
