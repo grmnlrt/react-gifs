@@ -1,3 +1,21 @@
 body {
   font-family: Helvetica;
 }
+
+#app {
+  display: flex;
+}
+
+.left-content {
+  flex: 0 0 60%;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content {
+  flex: 0 0 40%;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+}
